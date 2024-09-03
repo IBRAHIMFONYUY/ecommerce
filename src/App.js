@@ -1,23 +1,35 @@
-import logo from './logo.svg';
+import React from 'react';
+import Head from './component/header';
+import Special from './component/special';
+import Menu from './component/menu';
+import About from './component/about';
+import Footer from './component/footer';
 import './App.css';
 
 function App() {
+  const scrollto=(id)=>{
+    const element=document.getElementById(id)
+    if (element){
+      element.scrollIntoView({behavior:'smooth'})
+    }
+  }
+  const hidelinks=(id)=>{
+    const element=document.getElementById(id)
+    if ( element.style.display='none'){
+      element.style.display='flex'
+    }
+    else{
+      element.style.display='none'
+    }
+  }
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+      <Head  scrollto={scrollto} hidelinks={hidelinks}/>
+      <Special />
+      <Menu />
+      <About />
+      <Footer />
     </div>
   );
 }
