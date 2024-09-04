@@ -22,12 +22,21 @@ function App() {
       element.style.display='none'
     }
   }
+  const hidecard=(id)=>{
+    const element=document.getElementById(id)
+    if ( element.style.display='none'){
+      element.style.display='flex'
+    }
+    else{
+      element.style.display='none'
+    }
+  }
   
   return (
     <div >
       <Head  scrollto={scrollto} hidelinks={hidelinks}/>
       <Special />
-      <Menu />
+      <Menu hidecard={hidecard}/>
       <About />
       <Footer />
     </div>

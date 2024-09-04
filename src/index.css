@@ -278,7 +278,7 @@ color: white;
   width: 300px;
 }
 .menu-items{
-  height: 350px;
+  height: 400px;
   width: 300px;
   border-radius: 20px;
   box-shadow: 0 0 10px rgb(121, 120, 120);
@@ -297,8 +297,9 @@ color: white;
   background-color:rgba(243, 86, 73, 1) ;
   box-shadow: 0px 0px 20px rgb(151, 150, 150);
   .counter{
-    background-color: rgb(9, 173, 202);
+    background-color: yellow;
     border: solid 1px rgb(15, 15, 15);
+    color: rgb(22,23,49);
   }
   color: white;
 }
@@ -314,8 +315,8 @@ color: white;
 }
 
 .counter{
-  height: 15px;
-  width: 50px;
+  height: 20px;
+  width: 100px;
   border-radius: 10px;
   border: solid 1px rgba(243, 86, 73, 1);
   padding: 0px;
@@ -323,6 +324,10 @@ color: white;
   justify-content: center;
   background-color: rgba(243, 86, 73, 1);
   cursor: pointer;
+  font-size: 15px;
+  text-align: center;
+  place-content: center;
+  color: white;
 }
 .filters{
   display: flex;
@@ -395,6 +400,96 @@ color: white;
 .h3{
   font-weight: 0;
   
+}
+.card{
+  display: flex;
+  justify-self: center;
+  place-content: center;
+  margin: 20px;
+  padding: 50px;
+
+}
+.card-cnt{
+  display: block;
+  border: solid 1px rgb(238, 100, 100);
+  padding: 20px;
+  max-height: 500px;
+  overflow: scroll;
+  border: 20px;
+  box-shadow: 0 0 5px black;
+  img{
+    justify-content: center;
+    display: flex;
+    padding:10px;
+    margin: 10px;
+    position: absolute;
+    
+  }
+  
+}
+.card-items{
+  display: block;
+  width: 100%;
+}
+.card-item{
+  font-size: 20px;
+  justify-content: space-between;
+  text-align: center;
+}
+.item-minor{
+  
+  padding: 20px;
+  border-radius: 20px;
+  margin: 10px;
+
+}
+.card-btn{
+  color: white;
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  background-color: rgba(243, 86, 73, 1);
+  place-content: center;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+  
+
+}
+.card-btn:hover{
+  opacity: 0.6;
+  transform: scale(0.9);
+  transition: ease-in-out 0.3s;
+}
+.card-btn-remove{
+  display: block;
+  color: white;
+  height: 30px;
+  width: 100px;
+  border-radius: 20px;
+  background-color: rgba(243, 86, 73, 1);
+  place-content: center;
+  cursor: pointer;
+  
+
+}
+.card-btn-buy{
+  display: block;
+  color: white;
+  height: 30px;
+  width: 70px;
+  border-radius: 20px;
+  background-color: rgba(243, 86, 73, 1);
+  place-content: center;
+  cursor: pointer;
+  text-align: center;
+  
+
+}
+.btns{
+  display: flex;
+  justify-content: center;
 }
 @media (max-width:900px) {
   body{
@@ -479,7 +574,7 @@ color: white;
   }
   .sepcials-items.active{
     width: 100;
-    height: 2000px;
+    height: 200px;
     img{
       height: 100px;
       min-width: 15px;

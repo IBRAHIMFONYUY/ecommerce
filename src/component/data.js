@@ -13,7 +13,7 @@ const specials=[
     "name":"Cheeze Pizza",
     "picture":pic,
     "description":"cool and deliciuos hamburger made ewith care",
-    "price":"500FCFA"
+    "price":900
    },
    { 
       "id":2,
@@ -21,7 +21,7 @@ const specials=[
       "name":"Pizza italia",
       "picture":pic1,
       "description":"cool and deliciuos hamburger made ewith care",
-      "price":"500FCFA"
+      "price":800
      },
      { 
       "id":3,
@@ -29,7 +29,7 @@ const specials=[
       "name":"hamburger double cheese",
       "picture":pic2,
       "description":"cool and deliciuos hamburger made ewith care",
-      "price":"500FCFA"
+      "price":400
      },
      { 
       "id":4,
@@ -37,7 +37,7 @@ const specials=[
       "name":"sinple pizza",
       "picture":pic3,
       "description":"cool and deliciuos hamburger made ewith care",
-      "price":"500FCFA"
+      "price":600
      },
      { 
       "id":5,
@@ -45,7 +45,7 @@ const specials=[
       "name":"hamburger tripple cheese",
       "picture":pic5,
       "description":"cool and deliciuos hamburger made ewith care",
-      "price":"500FCFA"
+      "price":400
      },
      { 
       "id":6,
@@ -53,7 +53,7 @@ const specials=[
       "name":"refreshing drink",
       "picture":pic6,
       "description":"cool and deliciuos hamburger made ewith care",
-      "price":"500FCFA"
+      "price":400
      },
      { 
       "id":7,
@@ -61,7 +61,7 @@ const specials=[
       "name":"ice fruit drink",
       "picture":pic7,
       "description":"cool and deliciuos hamburger made ewith care",
-      "price":"500FCFA"
+      "price":600
      },
    
    
