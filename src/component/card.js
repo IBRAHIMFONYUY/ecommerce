@@ -67,14 +67,12 @@ const Card=()=>{
     
     const remove=(index)=>{
         const removeitem=card[index]
-        
+        const updatedcard=[...card]
             const newcard=card.filter((_, i)=>i !== index)
             setcard(newcard)
-            settotalitems(totalitems-1)
-        settotalamount(totalamount-removeitem.price)
+            settotalitems(totalitems-removeitem.quantity)
+        settotalamount(totalamount-(removeitem.price*removeitem.quantity))
 
-        
-    
     }
     const increaseqtty=(index)=>{
         const updatedcard=[...card]
@@ -162,8 +160,8 @@ const Card=()=>{
             <div className="menu-item">
             {getfilteredproducts().map(special=>(
                  
-            
-            
+                <>
+                
                 <div className="menu-items" key={special.id}>
                
                 <div className="top-menu"><FavoriteButton /><h3>{special.category}</h3></div>
@@ -187,6 +185,7 @@ const Card=()=>{
                 
                 
                 </div>
+                </>
             ))}
             </div>
            

@@ -63,6 +63,71 @@ const specials=[
       "description":"cool and deliciuos hamburger made ewith care",
       "price":600
      },
+     
+     { 
+      "id":8,
+      "category":"drink",
+      "name":"ice fruit drink",
+      "picture":pic7,
+      "description":"cool and deliciuos hamburger made ewith care",
+      "price":600
+     },
+     { 
+      "id":9,
+      "category":"drink",
+      "name":"ice fruit drink",
+      "picture":pic7,
+      "description":"cool and deliciuos hamburger made ewith care",
+      "price":600
+     },
+     { 
+      "id":10,
+      "category":"drink",
+      "name":"ice fruit drink",
+      "picture":pic7,
+      "description":"cool and deliciuos hamburger made ewith care",
+      "price":600
+     },
+     { 
+      "id":11,
+      "category":"drink",
+      "name":"ice fruit drink",
+      "picture":pic7,
+      "description":"cool and deliciuos hamburger made ewith care",
+      "price":600
+     },
+     { 
+      "id":12,
+      "category":"drink",
+      "name":"ice fruit drink",
+      "picture":pic7,
+      "description":"cool and deliciuos hamburger made ewith care",
+      "price":600
+     },
+     { 
+      "id":13,
+      "category":"drink",
+      "name":"ice fruit drink",
+      "picture":pic7,
+      "description":"cool and deliciuos hamburger made ewith care",
+      "price":600
+     },
+     { 
+      "id":14,
+      "category":"drink",
+      "name":"ice fruit drink",
+      "picture":pic7,
+      "description":"cool and deliciuos hamburger made ewith care",
+      "price":600
+     },
+     { 
+      "id":15,
+      "category":"drink",
+      "name":"ice fruit drink",
+      "picture":pic7,
+      "description":"cool and deliciuos hamburger made ewith care",
+      "price":600
+     },
    
    
     
