@@ -18,7 +18,7 @@ const FavoriteButton = () => {
         }}
         onClick={handleClick}
       >
-        &#10084;
+        &#9825;
       </span>
     </div>
   );
