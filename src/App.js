@@ -4,7 +4,13 @@ import Special from './component/special';
 import Menu from './component/menu';
 import About from './component/about';
 import Footer from './component/footer';
+import LoginPage from './component/login';
+
+import { BrowserRouter as Route, Router } from 'react-router-dom';
+
+
 import './App.css';
+
 
 function App() {
   const scrollto=(id)=>{
@@ -39,8 +45,10 @@ function App() {
       <Menu hidecard={hidecard}/>
       <About />
       <Footer />
+      
     </div>
   );
 }
 
 export default App;
+

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Ecommerce App</title>
+  </head>
+  <body>
+    
+    <div id="login"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+      
+    -->
+
+ 
+
+
+
+    <div class="login-container">
+        <div class="login-form">
+            <h2>Login</h2>
+            <input type="text" placeholder="Username" id="username">
+            <div class="password-input">
+                <input type="password" placeholder="Password" id="password" value='admin'>  
+                <span class="view-password" id="view-password" value='password'>
+                    <i class="fas fa-eye-slash"></i>
+                </span>
+            </div>
+            <button id="login-btn">Login</button>
+            <p id="error-msg"></p>
+        </div>
+    </div>
+
+    
+    <style>
+        body {
+            place-content:center
+            display:flex;
+            justify-content:center;
+            padding:100px;
+        }
+
+        
+
+        .login-form {
+            background-color: black;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            height:
+            
+        
+        }
+
+        .login-form input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .password-input {
+            position: relative;
+        }
+
+        .view-password {
+            position: absolute;
+            top: 12px;
+            right: 10px;
+            font-size: 12px;
+            color: #666;
+            cursor: pointer;
+        }
+
+        .view-password i {
+            font-size: 18px;
+        }
+
+        .login-form button {
+            width: 100px;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .login-form button:hover {
+            background-color: #0056b3;
+        }
+
+        #error-msg {
+            color: red;
+        }
+    </style>
+
+
+<script>
+const loginBtn = document.getElementById('login-btn');
+const usernameInput = document.getElementById('username');
+const passwordInput = document.getElementById('password');
+const viewPassword = document.getElementById('view-password');
+const errorMsg = document.getElementById('error-msg');
+
+viewPassword.addEventListener('click', () => {
+    if (passwordInput.type === 'password') {
+        passwordInput.type = 'text';
+        viewPassword.innerHTML = '<i class="fas fa-eye"></i>';
+    } else {
+        passwordInput.type = 'password';
+        viewPassword.innerHTML = '<i class="fas fa-eye-slash"></i>';
+    }
+});
+
+loginBtn.addEventListener('click', () => {
+    const username = usernameInput.value;
+    const password = passwordInput.value;
+
+    // Add your login logic here
+    if (username === 'admin' && password === 'password') {
+        // Login successful
+        window.location.href = 'home.html'; // Redirect to home page
+    } else {
+        errorMsg.textContent = 'Invalid username or password';
+    }
+});
+</script>
+
+
+
+      
+  </body>
+</html>

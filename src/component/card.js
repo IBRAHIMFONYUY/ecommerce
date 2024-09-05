@@ -1,18 +1,24 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import React from "react";
 import specials from "./data";
 import Priceincrement from "./price";
 import menu from "./menu.png"
 import Opps from "./opps";
 import pic from "./minor.png"
+import FavoriteButton from "./favbtn";
+import AddButton from "./addbtn";
 
 const Card=()=>{
     const[card, setcard]=useState([])
     const [totalitems, settotalitems]=useState(0)
     const [totalamount, settotalamount]=useState(0)
-    const[button, setbutton]=useState('Add Item')
+    const[button, setbutton]=useState('')
+    const[buttonnone, setbuttonnone]=useState('No buttons')
     const[amount, setamount]=useState(1);
     const[price, setprice]=useState(500);
+    const [isFavorited, setIsFavorited] = useState(false);
+
+  
     const incrementamount=500
     const incrementspace=1
     const[selectedcategory, setselectedcategory]=useState('All')
@@ -37,11 +43,28 @@ const Card=()=>{
             settotalitems(totalitems+1)
         settotalamount(totalamount+special.price)
         
+        
+            setbutton(
+                
+                <div className="card-btn-buy"  >Purchase Items</div>
+            
+            )
         }
+        
+        
+        
+        setbuttonnone(
+                
+            <div className="card-btn-buy"  >Purchaseds</div>
+        
+    )
+        
 
-        setbutton("Item Added")
+        
+        
         
     }
+    
     const remove=(index)=>{
         const removeitem=card[index]
         
@@ -49,6 +72,8 @@ const Card=()=>{
             setcard(newcard)
             settotalitems(totalitems-1)
         settotalamount(totalamount-removeitem.price)
+
+        
     
     }
     const increaseqtty=(index)=>{
@@ -115,13 +140,14 @@ const Card=()=>{
                 ))}
                 <h4>Total Price: {totalamount} FCFA</h4><br/>
                 <h4>Total Items: {totalitems} ITEMS</h4>
-                <div className="card-btn-buy" >Purchase</div>
+                <span >{button}</span>
             </div>
             </div>
             
         </div>
         <div id="menu">
         <div className="menu-header">
+            
         <img style={{display:"block"}} src={menu}/>
         </div>
         <div className="filters">
@@ -139,10 +165,10 @@ const Card=()=>{
             
             
                 <div className="menu-items" key={special.id}>
-                
-                <div className="top-menu"></div>
+               
+                <div className="top-menu"><FavoriteButton /><h3>{special.category}</h3></div>
                 <img src={special.picture}/>
-                <div className="bottom">{special.name} ({special.category})</div>
+                <div className="bottom">{special.name}</div>
                 <div className="description">{special.description}</div>
                 
                 
@@ -153,7 +179,7 @@ const Card=()=>{
             
         }}>{special.price} FCFA  
             <div className="counter" onClick={()=>add(special)}  >
-            add item
+            {button}
             
             </div>
             

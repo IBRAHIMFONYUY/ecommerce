@@ -44,7 +44,7 @@ const specials=[
       "category":"snack",
       "name":"hamburger tripple cheese",
       "picture":pic5,
-      "description":"cool and deliciuos hamburger made ewith care",
+      "description":"cool and deliciuos hamburger made ewith care ejnw, en eci ejidjw wejij ewnii eiwie eifiwe eifie eifo iewjoi ",
       "price":400
      },
      { 
