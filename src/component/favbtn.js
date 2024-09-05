@@ -13,6 +13,7 @@ const FavoriteButton = () => {
       <span
         style={{
           color: isFavorited ? 'red' : 'gray',
+          backgroundColor: isFavorited ? 'red' : 'gray',
           cursor: 'pointer',
           fontSize:'50px'
         }}
