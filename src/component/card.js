@@ -177,7 +177,7 @@ const Card=()=>{
             
         }}>{special.price} FCFA  
             <div className="counter" onClick={()=>add(special)}  >
-            {button}
+            <AddButton />
             
             </div>
             
