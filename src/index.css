@@ -692,6 +692,7 @@ color: white;
   .sepcials-items.active{
     width: 100;
     height: 200px;
+	border-radius:20px;
     img{
       height: 100px;
       min-width: 15px;
