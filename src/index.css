@@ -619,10 +619,12 @@ color: white;
 .mail{
   margin: 5px;
   padding:5px ;
+	display:block;
 }
 .address{
   margin: 5px;
   padding:5px ;
+	display:block;
 }
 
 /* login style */
