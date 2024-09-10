@@ -32,7 +32,7 @@ const About=()=>{
                 <div>location</div>
                 </div>
                 <div className="map" style={{padding:"15px"}}>
-                    <img src={map} />
+                    <div class="mapouter"><div class="gmap_canvas"><iframe src="https://maps.google.com/maps?q=polytechnic%20Yaounde%20cameroon&amp;t=k&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" frameborder="0" scrolling="no" style={{width: "430px", height: "400px"}}></iframe><a href="https://www.taxuni.com/qbi-calculator/">QBI Calculator</a></div></div>
                 </div>
             </div>
             
