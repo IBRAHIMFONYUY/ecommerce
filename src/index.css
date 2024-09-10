@@ -615,9 +615,7 @@ color: white;
   display: flex;
   justify-content: space-between;
 }
-.foot-img{
-  position: absolute;
-}
+
 .mail{
   margin: 5px;
   padding:5px ;
@@ -747,9 +745,7 @@ color: white;
     justify-content: center;
     text-align: center;
   }
-  .footer img{
-    width: 100%;
-  }
+  
   .filter{
     font-size: 15px;
     padding: 5px;
@@ -757,11 +753,5 @@ color: white;
     width: 200px;
     place-content: center;
   }
-	.card{
-		width:100%;
-	}
-	.card-cnt{
-		width:100%;
-	}
- 
+	
 }
