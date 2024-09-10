@@ -15,7 +15,7 @@ const FavoriteButton = () => {
           color: isFavorited ? 'red' : 'gray',
           
           cursor: 'pointer',
-          fontSize:'30px'
+          fontSize:'40px'
         }}
         onClick={handleClick}
       >
