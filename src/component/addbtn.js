@@ -1,10 +1,10 @@
 import { useState } from "react";
 import React from "react";
-const AddButton = (add, remove) => {
+const AddButton = () => {
   const [isFavorited, setIsFavorited] = useState(false);
   const[button, setbutton]=useState("Add item")
 
-  const handleClick = (add, remove) => {
+  const handleClick = () => {
     setIsFavorited(!isFavorited);
   };
 
@@ -22,7 +22,7 @@ const AddButton = (add, remove) => {
       }}
       >
         {isFavorited ? 'Item Added' : (button)}
-        {isFavorited ? (()=>add()) : (()=>remove())}
+        
       </span>
       
     </div>
