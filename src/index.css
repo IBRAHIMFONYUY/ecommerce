@@ -736,5 +736,11 @@ color: white;
     width: 200px;
     place-content: center;
   }
+	.card{
+		width:100%;
+	}
+	.card-cnt{
+		width:100%;
+	}
  
 }
