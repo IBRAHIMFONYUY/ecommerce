@@ -605,6 +605,27 @@ color: white;
     transform: scale(1);
   }
 }
+.footer{
+  height: 200px;
+  width: 100%;
+  margin: 0;
+  padding: 20px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+.foot-img{
+  position: absolute;
+}
+.mail{
+  margin: 5px;
+  padding:5px ;
+}
+.address{
+  margin: 5px;
+  padding:5px ;
+}
 
 /* login style */
 
