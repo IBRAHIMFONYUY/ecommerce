@@ -1,5 +1,5 @@
 import React from "react";
-import footer from "./footer.png"
+
 import image from "./image.png"
 
  const Footer=()=>{
